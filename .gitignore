@@ -1,0 +1,86 @@
+# ---- Go build artifacts ----
+# Binaries and build outputs
+bin/
+build/
+dist/
+out/
+tmp/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go tooling outputs
+*.coverprofile
+*.pprof
+cover.*
+profile.*
+debug/
+
+# Dependencies (uncomment vendor/ if you use -mod=vendor)
+vendor/
+
+# ---- Editor/OS specific ----
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Logs & temp ----
+*.log
+logs/
+log/
+*.tmp
+
+# ---- Environment files ----
+.env
+.env.*
+!.env.example
+
+# ---- Docker related ----
+.docker/
+.dockerignore
+Dockerfile.*
+# Local overrides
+**/docker-compose.override.yml
+
+# ---- Test/coverage ----
+coverage/
+cover/
+.cov/
+*.lcov
+
+# ---- Ethereum geth / data & secrets ----
+# Common geth data dirs
+geth/
+geth-data/
+datadir/
+chaindata/
+lightchaindata/
+nodes/
+triecache/
+
+# Keystores and secrets (already tracked files will remain until removed from git)
+keystore/
+keystore_new/
+configs/keystore/
+configs/keystore_new/
+configs/password.txt
+configs/temp_pass.txt
+
+# ---- Project specific misc ----
+# Ignore local metrics/log artifacts
+metrics/*.log
+configs/*.log
+
+# Archive/backup files
+*.tar
+*.gz
+*.zip
+*.7z
